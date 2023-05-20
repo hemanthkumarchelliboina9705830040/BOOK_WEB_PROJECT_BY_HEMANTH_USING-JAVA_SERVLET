@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <welcome-file-list>
+    <welcome-file>book_web_app1.html</welcome-file>
+  </welcome-file-list>
+  <display-name>BookWebApp</display-name>
+  <servlet>
+    <description></description>
+    <display-name>BookListServlet</display-name>
+    <servlet-name>BookListServlet</servlet-name>
+    <servlet-class>com.idiot.servlet.BookListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookListServlet</servlet-name>
+    <url-pattern>/BookListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditScreenServlet</display-name>
+    <servlet-name>EditScreenServlet</servlet-name>
+    <servlet-class>com.idiot.servlet.EditScreenServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditScreenServlet</servlet-name>
+    <url-pattern>/EditScreenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditServlet</display-name>
+    <servlet-name>EditServlet</servlet-name>
+    <servlet-class>com.idiot.servlet.EditServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditServlet</servlet-name>
+    <url-pattern>/EditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>deleteServlet</display-name>
+    <servlet-name>deleteServlet</servlet-name>
+    <servlet-class>com.idiot.servlet.deleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteServlet</servlet-name>
+    <url-pattern>/deleteServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
